@@ -5,16 +5,9 @@ from flask_cors import CORS
 from flask import Flask, request, jsonify
 from youtubeParams import ydl_opts
 
-os.makedirs('YT audios', exist_ok=True)
-os.makedirs('YT videos', exist_ok=True)
-
-folder_mapping = {
-    'audio': 'YT audios',
-    'video': 'YT videos'
-}
-
+DOWNLOAD_FOLDER = '/downloads'
 logging.basicConfig(
-    filename='ytdownload.log',
+    filename=os.path.join(DOWNLOAD_FOLDER, 'ytdownload.log'),
     format='%(asctime)s - %(levelname)s - %(message)s',
     filemode='w'
 )
@@ -24,6 +17,17 @@ logger.setLevel(logging.DEBUG)
 
 app = Flask(__name__)
 CORS(app)
+
+AUDIO_FOLDER = os.path.join(DOWNLOAD_FOLDER, 'YT audios')
+VIDEO_FOLDER = os.path.join(DOWNLOAD_FOLDER, 'YT videos')
+
+os.makedirs(AUDIO_FOLDER, exist_ok=True)
+os.makedirs(VIDEO_FOLDER, exist_ok=True)
+
+folder_mapping = {
+    'audio': AUDIO_FOLDER,
+    'video': VIDEO_FOLDER
+}
 
 
 @app.route('/api/download/', methods=['POST'])
