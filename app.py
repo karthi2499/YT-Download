@@ -1,8 +1,18 @@
+import os
 import yt_dlp
 import logging
 from flask_cors import CORS
 from flask import Flask, request, jsonify
 from youtubeParams import ydl_opts
+
+os.makedirs('YT audios', exist_ok=True)
+os.makedirs('YT videos', exist_ok=True)
+
+folder_mapping = {
+    'audio': 'YT audios',
+    'video': 'YT videos'
+}
+
 
 logging.basicConfig(
     filename='ytdownload.log',
@@ -21,23 +31,35 @@ CORS(app)
 def download():
     try:
         data = request.json
-        param = ydl_opts[data['file_formate']]
+        url = data.get('url')
+        file_format = data.get('file_formate')
 
-        url = data['url']
+        if not url or not file_format:
+            return jsonify({'error': 'Missing required parameters: url or file_formate'}), 400
+
+        param = ydl_opts.get(file_format)
+        if not param:
+            return jsonify({'error': 'Invalid file format'}), 400
+
+        param['outtmpl'] = os.path.join(folder_mapping[file_format], '%(title)s.%(ext)s')
+
         try:
-            logger.info(f"Starting download: {url}")
+            logger.info(f"Starting download: {url} with format: {file_format}")
             with yt_dlp.YoutubeDL(param) as ydl:
-                ydl.download([url])
-            logger.info(f"Download complete: {url}")
+                result = ydl.extract_info(url, download=True)
+                filename = ydl.prepare_filename(result)
 
+            logger.info(f"Download complete: {filename}")
+            return jsonify({'message': 'Download complete', 'file': filename})
         except yt_dlp.utils.DownloadError as e:
             logger.error(f"Download error: {e}")
+            return jsonify({'error': 'Download failed'}), 500
         except Exception as e:
             logger.error(f"Unexpected error: {e}")
-
-        return jsonify({'message': 'Started Downloading'})
+            return jsonify({'error': 'Unexpected error occurred'}), 500
     except Exception as e:
-        return jsonify({'error': e.__str__()}), 500
+        logger.error(f"Error in request handling: {e}")
+        return jsonify({'error': 'Server error'}), 500
 
 
 if __name__ == '__main__':
