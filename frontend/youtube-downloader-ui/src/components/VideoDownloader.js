@@ -15,10 +15,10 @@ const VideoDownloader = () => {
 
     try {
       setMessage("Downloading...");
-      const response = await axios.post("http://localhost:5000/api/download/", {
+      const response = await axios.post("/api/download/", {
         url,
         file_formate: fileFormat,
-      });
+      });      
 
       setMessage(response.data.message || "Download started!");
     } catch (error) {
