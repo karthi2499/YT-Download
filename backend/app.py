@@ -13,7 +13,6 @@ folder_mapping = {
     'video': 'YT videos'
 }
 
-
 logging.basicConfig(
     filename='ytdownload.log',
     format='%(asctime)s - %(levelname)s - %(message)s',
