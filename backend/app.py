@@ -6,8 +6,9 @@ from flask import Flask, request, jsonify
 from youtubeParams import ydl_opts
 
 DOWNLOAD_FOLDER = '/downloads'
+logs_folder = 'config'
 logging.basicConfig(
-    filename=os.path.join(DOWNLOAD_FOLDER, 'ytdownload.log'),
+    filename=os.path.join(logs_folder, 'ytdownload.log'),
     format='%(asctime)s - %(levelname)s - %(message)s',
     filemode='w'
 )
