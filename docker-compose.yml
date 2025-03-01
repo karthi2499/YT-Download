@@ -1,16 +1,24 @@
 services:
   backend:
-    build: ./backend
+    build:
+      context: ./backend  # Make sure it points to the correct path
+      dockerfile: Dockerfile
     ports:
       - "5000:5000"
     volumes:
-      - /DATA/Downloads/Resilio Sync:/downloads
+      - type: bind
+        source: /DATA/AppData/TY files/config
+        target: /config
+      - type: bind
+        source: /DATA/Downloads
+        target: /downloads
     environment:
       - FLASK_ENV=development
 
   frontend:
     build:
       context: ./frontend  # Make sure it points to the correct path
+      dockerfile: Dockerfile
     ports:
       - "3000:80"
     depends_on:
