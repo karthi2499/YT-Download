@@ -1,6 +1,6 @@
 ydl_opts = {
     'video': {
-        'format': 'best',
+        'format': 'bestvideo',
         'noplaylist': False,  # Download single video if URL is part of a playlist
         'quiet': False,  # Show download progress in the console
         'ignoreerrors': True,  # Continue even if an error is encountered

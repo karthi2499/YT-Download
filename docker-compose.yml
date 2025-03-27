@@ -1,5 +1,5 @@
 services:
-  yt-download:
+  yt-downloader:
     build:
       context: .
       dockerfile: Dockerfile

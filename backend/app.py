@@ -6,7 +6,7 @@ from flask import Flask, request, jsonify
 from youtubeParams import ydl_opts
 
 DOWNLOAD_FOLDER = '/downloads'
-logs_folder = 'config'
+logs_folder = '/config'
 logging.basicConfig(
     filename=os.path.join(logs_folder, 'ytdownload.log'),
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -67,4 +67,4 @@ def download():
 
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
