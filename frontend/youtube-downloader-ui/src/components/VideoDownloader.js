@@ -15,7 +15,7 @@ const VideoDownloader = () => {
 
     try {
       setMessage("Downloading...");
-      const response = await axios.post("http://192.168.1.195:5000/api/download/", {
+      const response = await axios.post("http://localhost:5000/api/download/", {
         url,
         file_formate: fileFormat,
       });      

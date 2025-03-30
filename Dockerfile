@@ -5,20 +5,20 @@
     
     # Copy package.json and package-lock.json first (for caching)
     COPY frontend/youtube-downloader-ui/package.json frontend/youtube-downloader-ui/package-lock.json ./
-    RUN npm ci --legacy-peer-deps
+    RUN npm install --legacy-peer-deps
     
     # Copy the rest of the frontend project and build it
     COPY frontend/youtube-downloader-ui ./
     RUN npm run build
     
     # ----------- NGINX STAGE FOR SERVING FRONTEND -----------
-    FROM nginx:alpine AS frontend
+    FROM nginx:alpine AS ui
     
     # Copy built frontend files to Nginx's HTML directory
-    COPY --from=frontend-build /app/dist /usr/share/nginx/html
+    COPY --from=frontend-build /app/build /usr/share/nginx/html
     
     # Expose frontend port
-    EXPOSE 3000
+    EXPOSE 80
     
     # Start Nginx
     CMD ["nginx", "-g", "daemon off;"]

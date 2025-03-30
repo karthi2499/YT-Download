@@ -5,9 +5,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: frontend  # Uses the Nginx stage in the Dockerfile
+      target: ui  # Uses the Nginx stage in the Dockerfile
     ports:
-      - "3000:3000"  # Frontend accessible on port 80
+      - "3000:80"  # Frontend accessible on port 80
     depends_on:
       - youtube-downloader-backend
     restart: always
