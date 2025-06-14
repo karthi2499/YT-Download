@@ -1,0 +1,107 @@
+Function Code,Function,Category Code,Category,Subcategory,Implementation Example
+GV,GOVERN,OC,Organizational Context,GV.OC-01,"Share the organization's mission (e.g., through vision and mission statements, marketing, and service strategies) to provide a basis for identifying risks that may impede that mission"
+GV,GOVERN,OC,Organizational Context,GV.OC-02,"Identify relevant internal stakeholders and their cybersecurity-related expectations (e.g., performance and risk expectations of officers, directors, and advisors; cultural expectations of employees)"
+GV,GOVERN,OC,Organizational Context,GV.OC-03,"Determine a process to track and manage legal and regulatory requirements regarding protection of individuals' information (e.g., Health Insurance Portability and Accountability Act, California Consumer Privacy Act, General Data Protection Regulation)"
+GV,GOVERN,OC,Organizational Context,GV.OC-04,Establish criteria for determining the criticality of capabilities and services as viewed by internal and external stakeholders
+GV,GOVERN,OC,Organizational Context,GV.OC-05,"Create an inventory of the organization's dependencies on external resources (e.g., facilities, cloud-based hosting providers) and their relationships to organizational assets and business functions"
+GV,GOVERN,RM,Risk Management Strategy,GV.RM-01,Update near-term and long-term cybersecurity risk management objectives as part of annual strategic planning and when major changes occur
+GV,GOVERN,RM,Risk Management Strategy,GV.RM-02,Determine and communicate risk appetite statements that convey expectations about the appropriate level of risk for the organization
+GV,GOVERN,RM,Risk Management Strategy,GV.RM-03,"Aggregate and manage cybersecurity risks alongside other enterprise risks (e.g., compliance, financial, operational, regulatory, reputational, safety)"
+GV,GOVERN,RM,Risk Management Strategy,GV.RM-04,Specify criteria for accepting and avoiding cybersecurity risk for various classifications of data
+GV,GOVERN,RM,Risk Management Strategy,GV.RM-05,"Determine how to update senior executives, directors, and management on the organization's cybersecurity posture at agreed-upon intervals"
+GV,GOVERN,RM,Risk Management Strategy,GV.RM-06,"Establish criteria for using a quantitative approach to cybersecurity risk analysis, and specify probability and exposure formulas"
+GV,GOVERN,RM,Risk Management Strategy,GV.RM-07,"Define and communicate guidance and methods for identifying opportunities and including them in risk discussions (e.g., strengths, weaknesses, opportunities, and threats [SWOT] analysis)"
+GV,GOVERN,RR,"Roles, Responsibilities, and Authorities",GV.RR-01,"Leaders (e.g., directors) agree on their roles and responsibilities in developing, implementing, and assessing the organization's cybersecurity strategy"
+GV,GOVERN,RR,"Roles, Responsibilities, and Authorities",GV.RR-02,Document risk management roles and responsibilities in policy
+GV,GOVERN,RR,"Roles, Responsibilities, and Authorities",GV.RR-03,Conduct periodic management reviews to ensure that those given cybersecurity risk management responsibilities have the necessary authority
+GV,GOVERN,RR,"Roles, Responsibilities, and Authorities",GV.RR-04,"Integrate cybersecurity risk management considerations into human resources processes (e.g., personnel screening, onboarding, change notification, offboarding)"
+GV,GOVERN,PO,Policy,GV.PO-01,"Create, disseminate, and maintain an understandable, usable risk management policy with statements of management intent, expectations, and direction"
+GV,GOVERN,PO,Policy,GV.PO-02,Update policy based on periodic reviews of cybersecurity risk management results to ensure that policy and supporting processes and procedures adequately maintain risk at an acceptable level
+GV,GOVERN,OV,Oversight,GV.OV-01,Measure how well the risk management strategy and risk results have helped leaders make decisions and achieve organizational objectives
+GV,GOVERN,OV,Oversight,GV.OV-02,Review audit findings to confirm whether the existing cybersecurity strategy has ensured compliance with internal and external requirements
+GV,GOVERN,OV,Oversight,GV.OV-03,Review key performance indicators (KPIs) to ensure that organization-wide policies and procedures achieve objectives
+GV,GOVERN,SC,Cybersecurity Supply Chain Risk Management,GV.SC-01,Establish a strategy that expresses the objectives of the cybersecurity supply chain risk management program
+GV,GOVERN,SC,Cybersecurity Supply Chain Risk Management,GV.SC-02,"Identify one or more specific roles or positions that will be responsible and accountable for planning, resourcing, and executing cybersecurity supply chain risk management activities"
+GV,GOVERN,SC,Cybersecurity Supply Chain Risk Management,GV.SC-03,Identify areas of alignment and overlap with cybersecurity and enterprise risk management
+GV,GOVERN,SC,Cybersecurity Supply Chain Risk Management,GV.SC-04,"Develop criteria for supplier criticality based on, for example, the sensitivity of data processed or possessed by suppliers, the degree of access to the organization's systems, and the importance of the products or services to the organization's mission"
+GV,GOVERN,SC,Cybersecurity Supply Chain Risk Management,GV.SC-05,"Establish security requirements for suppliers, products, and services commensurate with their criticality level and potential impact if compromised"
+GV,GOVERN,SC,Cybersecurity Supply Chain Risk Management,GV.SC-06,"Perform thorough due diligence on prospective suppliers that is consistent with procurement planning and commensurate with the level of risk, criticality, and complexity of each supplier relationship"
+GV,GOVERN,SC,Cybersecurity Supply Chain Risk Management,GV.SC-07,Adjust assessment formats and frequencies based on the third party's reputation and the criticality of the products or services they provide
+GV,GOVERN,SC,Cybersecurity Supply Chain Risk Management,GV.SC-08,Define and use rules and protocols for reporting incident response and recovery activities and the status between the organization and its suppliers
+GV,GOVERN,SC,Cybersecurity Supply Chain Risk Management,GV.SC-09,Policies and procedures require provenance records for all acquired technology products and services
+GV,GOVERN,SC,Cybersecurity Supply Chain Risk Management,GV.SC-10,Establish processes for terminating critical relationships under both normal and adverse circumstances
+ID,IDENTIFY,AM,Asset Management,ID.AM-01,"Maintain inventories for all types of hardware, including IT, IoT, OT, and mobile devices"
+ID,IDENTIFY,AM,Asset Management,ID.AM-02,"Maintain inventories for all types of software and services, including commercial-off-the-shelf, open-source, custom applications, API services, and cloud-based applications and services"
+ID,IDENTIFY,AM,Asset Management,ID.AM-03,Maintain baselines of communication and data flows within the organization's wired and wireless networks
+ID,IDENTIFY,AM,Asset Management,ID.AM-04,"Inventory all external services used by the organization, including third-party infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and software-as-a-service (SaaS) offerings; APIs; and other externally hosted application services"
+ID,IDENTIFY,AM,Asset Management,ID.AM-05,Define criteria for prioritizing each class of assets
+ID,IDENTIFY,AM,Asset Management,ID.AM-07,"Maintain a list of the designated data types of interest (e.g., personally identifiable information, protected health information, financial account numbers, organization intellectual property, operational technology data)"
+ID,IDENTIFY,AM,Asset Management,ID.AM-08,"Integrate cybersecurity considerations throughout the life cycles of systems, hardware, software, and services"
+ID,IDENTIFY,RA,Risk Assessment,ID.RA-01,Use vulnerability management technologies to identify unpatched and misconfigured software
+ID,IDENTIFY,RA,Risk Assessment,ID.RA-02,Configure cybersecurity tools and technologies with detection or response capabilities to securely ingest cyber threat intelligence feeds
+ID,IDENTIFY,RA,Risk Assessment,ID.RA-03,Use cyber threat intelligence to maintain awareness of the types of threat actors likely to target the organization and the TTPs they are likely to use
+ID,IDENTIFY,RA,Risk Assessment,ID.RA-04,Business leaders and cybersecurity risk management practitioners work together to estimate the likelihood and impact of risk scenarios and record them in risk registers
+ID,IDENTIFY,RA,Risk Assessment,ID.RA-05,Develop threat models to better understand risks to the data and identify appropriate risk responses
+ID,IDENTIFY,RA,Risk Assessment,ID.RA-06,"Apply the vulnerability management plan's criteria for deciding whether to accept, transfer, mitigate, or avoid risk"
+ID,IDENTIFY,RA,Risk Assessment,ID.RA-07,"Implement and follow procedures for the formal documentation, review, testing, and approval of proposed changes and requested exceptions"
+ID,IDENTIFY,RA,Risk Assessment,ID.RA-08,Conduct vulnerability information sharing between the organization and its suppliers following the rules and protocols defined in contracts
+ID,IDENTIFY,RA,Risk Assessment,ID.RA-09,Assess the authenticity and cybersecurity of critical technology products and services prior to acquisition and use
+ID,IDENTIFY,RA,Risk Assessment,ID.RA-10,"Conduct supplier risk assessments against business and applicable cybersecurity requirements, including the supply chain"
+ID,IDENTIFY,IM,Improvement,ID.IM-01,Perform self-assessments of critical services that take current threats and TTPs into consideration
+ID,IDENTIFY,IM,Improvement,ID.IM-02,"Identify improvements for future incident response activities based on findings from incident response assessments (e.g., tabletop exercises and simulations, tests, internal reviews, independent audits)"
+ID,IDENTIFY,IM,Improvement,ID.IM-03,Conduct collaborative lessons learned sessions with suppliers
+ID,IDENTIFY,IM,Improvement,ID.IM-04,"Establish contingency plans (e.g., incident response, business continuity, disaster recovery) for responding to and recovering from adverse events that can interfere with operations, expose confidential information, or otherwise endanger the organization's mission and viability"
+PR,PROTECT,AA,"Identity Management, Authentication, and Access Control",PR.AA-01,"Initiate requests for new access or additional access for employees, contractors, and others, and track, review, and fulfill the requests, with permission from system or data owners when needed"
+PR,PROTECT,AA,"Identity Management, Authentication, and Access Control",PR.AA-02,"Verify a person's claimed identity at enrollment time using government-issued identity credentials (e.g., passport, visa, driver's license)"
+PR,PROTECT,AA,"Identity Management, Authentication, and Access Control",PR.AA-03,Require multifactor authentication
+PR,PROTECT,AA,"Identity Management, Authentication, and Access Control",PR.AA-04,Protect identity assertions that are used to convey authentication and user information through single sign-on systems
+PR,PROTECT,AA,"Identity Management, Authentication, and Access Control",PR.AA-05,"Review logical and physical access privileges periodically and whenever someone changes roles or leaves the organization, and promptly rescind privileges that are no longer needed"
+PR,PROTECT,AA,"Identity Management, Authentication, and Access Control",PR.AA-06,"Use security guards, security cameras, locked entrances, alarm systems, and other physical controls to monitor facilities and restrict access"
+PR,PROTECT,AT,Awareness and Training,PR.AT-01,"Provide basic cybersecurity awareness and training to employees, contractors, partners, suppliers, and all other users of the organization's non-public resources"
+PR,PROTECT,AT,Awareness and Training,PR.AT-02,"Identify the specialized roles within the organization that require additional cybersecurity training, such as physical and cybersecurity personnel, finance personnel, senior leadership, and anyone with access to business-critical data"
+PR,PROTECT,DS,Data Security,PR.DS-01,"Use encryption, digital signatures, and cryptographic hashes to protect the confidentiality and integrity of stored data in files, databases, virtual machine disk images, container images, and other resources"
+PR,PROTECT,DS,Data Security,PR.DS-02,"Use encryption, digital signatures, and cryptographic hashes to protect the confidentiality and integrity of network communications"
+PR,PROTECT,DS,Data Security,PR.DS-10,"Remove data that must remain confidential (e.g., from processors and memory) as soon as it is no longer needed"
+PR,PROTECT,DS,Data Security,PR.DS-11,"Continuously back up critical data in near-real-time, and back up other data frequently at agreed-upon schedules"
+PR,PROTECT,PS,Platform Security,PR.PS-01,"Establish, test, deploy, and maintain hardened baselines that enforce the organization's cybersecurity policies and provide only essential capabilities (i.e., principle of least functionality)"
+PR,PROTECT,PS,Platform Security,PR.PS-02,Perform routine and emergency patching within the timeframes specified in the vulnerability management plan
+PR,PROTECT,PS,Platform Security,PR.PS-03,Replace hardware when it lacks needed security capabilities or when it cannot support software with needed security capabilities
+PR,PROTECT,PS,Platform Security,PR.PS-04,"Configure all operating systems, applications, and services (including cloud-based services) to generate log records"
+PR,PROTECT,PS,Platform Security,PR.PS-05,"When risk warrants it, restrict software execution to permitted products only or deny the execution of prohibited and unauthorized software"
+PR,PROTECT,PS,Platform Security,PR.PS-06,Protect all components of organization-developed software from tampering and unauthorized access
+PR,PROTECT,IR,Technology Infrastructure Resilience,PR.IR-01,"Logically segment organization networks and cloud-based platforms according to trust boundaries and platform types (e.g., IT, IoT, OT, mobile, guests), and permit required communications only between segments"
+PR,PROTECT,IR,Technology Infrastructure Resilience,PR.IR-02,"Protect organizational equipment from known environmental threats, such as flooding, fire, wind, and excessive heat and humidity"
+PR,PROTECT,IR,Technology Infrastructure Resilience,PR.IR-03,Avoid single points of failure in systems and infrastructure
+PR,PROTECT,IR,Technology Infrastructure Resilience,PR.IR-04,"Monitor usage of storage, power, compute, network bandwidth, and other resources"
+DE,DETECT,CM,Continuous Monitoring,DE.CM-01,"Monitor DNS, BGP, and other network services for adverse events"
+DE,DETECT,CM,Continuous Monitoring,DE.CM-02,"Monitor logs from physical access control systems (e.g., badge readers) to find unusual access patterns (e.g., deviations from the norm) and failed access attempts"
+DE,DETECT,CM,Continuous Monitoring,DE.CM-03,Use behavior analytics software to detect anomalous user activity to mitigate insider threats
+DE,DETECT,CM,Continuous Monitoring,DE.CM-06,Monitor remote and onsite administration and maintenance activities that external providers perform on organizational systems
+DE,DETECT,CM,Continuous Monitoring,DE.CM-09,"Monitor email, web, file sharing, collaboration services, and other common attack vectors to detect malware, phishing, data leaks and exfiltration, and other adverse events"
+DE,DETECT,AE,Adverse Event Analysis,DE.AE-02,Use security information and event management (SIEM) or other tools to continuously monitor log events for known malicious and suspicious activity
+DE,DETECT,AE,Adverse Event Analysis,DE.AE-03,Constantly transfer log data generated by other sources to a relatively small number of log servers
+DE,DETECT,AE,Adverse Event Analysis,DE.AE-04,"Use SIEMs or other tools to estimate impact and scope, and review and refine the estimates"
+DE,DETECT,AE,Adverse Event Analysis,DE.AE-06,"Use cybersecurity software to generate alerts and provide them to the security operations center (SOC), incident responders, and incident response tools"
+DE,DETECT,AE,Adverse Event Analysis,DE.AE-07,"Securely provide cyber threat intelligence feeds to detection technologies, processes, and personnel"
+DE,DETECT,AE,Adverse Event Analysis,DE.AE-08,Apply incident criteria to known and assumed characteristics of activity in order to determine whether an incident should be declared
+RS,RESPOND,MA,Incident Management,RS.MA-01,Detection technologies automatically report confirmed incidents
+RS,RESPOND,MA,Incident Management,RS.MA-02,Preliminarily review incident reports to confirm that they are cybersecurity-related and necessitate incident response activities
+RS,RESPOND,MA,Incident Management,RS.MA-03,"Further review and categorize incidents based on the type of incident (e.g., data breach, ransomware, DDoS, account compromise)"
+RS,RESPOND,MA,Incident Management,RS.MA-04,Track and validate the status of all ongoing incidents
+RS,RESPOND,MA,Incident Management,RS.MA-05,Apply incident recovery criteria to known and assumed characteristics of the incident to determine whether incident recovery processes should be initiated
+RS,RESPOND,AN,Incident Analysis,RS.AN-03,Determine the sequence of events that occurred during the incident and which assets and resources were involved in each event
+RS,RESPOND,AN,Incident Analysis,RS.AN-06,"Require each incident responder and others (e.g., system administrators, cybersecurity engineers) who perform incident response tasks to record their actions and make the record immutable"
+RS,RESPOND,AN,Incident Analysis,RS.AN-07,"Collect, preserve, and safeguard the integrity of all pertinent incident data and metadata (e.g., data source, date/time of collection) based on evidence preservation and chain-of-custody procedures"
+RS,RESPOND,AN,Incident Analysis,RS.AN-08,Review other potential targets of the incident to search for indicators of compromise and evidence of persistence
+RS,RESPOND,CO,Incident Response Reporting and Communication,RS.CO-02,"Follow the organization's breach notification procedures after discovering a data breach incident, including notifying affected customers"
+RS,RESPOND,CO,Incident Response Reporting and Communication,RS.CO-03,Securely share information consistent with response plans and information sharing agreements
+RS,RESPOND,MI,Incident Mitigation,RS.MI-01,"Cybersecurity technologies (e.g., antivirus software) and cybersecurity features of other technologies (e.g., operating systems, network infrastructure devices) automatically perform containment actions"
+RS,RESPOND,MI,Incident Mitigation,RS.MI-02,"Cybersecurity technologies and cybersecurity features of other technologies (e.g., operating systems, network infrastructure devices) automatically perform eradication actions"
+RC,RECOVER,RP,Incident Recovery Plan Execution,RC.RP-01,Begin recovery procedures during or after incident response processes
+RC,RECOVER,RP,Incident Recovery Plan Execution,RC.RP-02,Select recovery actions based on the criteria defined in the incident response plan and available resources
+RC,RECOVER,RP,Incident Recovery Plan Execution,RC.RP-03,"Check restoration assets for indicators of compromise, file corruption, and other integrity issues before use"
+RC,RECOVER,RP,Incident Recovery Plan Execution,RC.RP-04,Use business impact and system categorization records (including service delivery objectives) to validate that essential services are restored in the appropriate order
+RC,RECOVER,RP,Incident Recovery Plan Execution,RC.RP-05,Check restored assets for indicators of compromise and remediation of root causes of the incident before production use
+RC,RECOVER,RP,Incident Recovery Plan Execution,RC.RP-06,"Prepare an after-action report that documents the incident itself, the response and recovery actions taken, and lessons learned"
+RC,RECOVER,CO,Incident Recovery Communication,RC.CO-03,"Securely share recovery information, including restoration progress, consistent with response plans and information sharing agreements"
+RC,RECOVER,CO,Incident Recovery Communication,RC.CO-04,Follow the organization's breach notification procedures for recovering from a data breach incident
