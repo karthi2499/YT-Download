@@ -1,6 +1,7 @@
 ydl_opts = {
     'video': {
-        'format': 'bestvideo',
+        'format': 'bestvideo+bestaudio/best',  # This combines best video with best audio
+        'merge_output_format': 'mp4',  # Ensures the streams are merged into mp4
         'noplaylist': False,  # Download single video if URL is part of a playlist
         'quiet': False,  # Show download progress in the console
         'ignoreerrors': True,  # Continue even if an error is encountered
